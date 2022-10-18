@@ -9,9 +9,9 @@
     <relativePath>../../../</relativePath>
   </parent>
   <groupId>org.example.test.job</groupId>
-  <artifactId>demo</artifactId>
+  <artifactId>Zoho</artifactId>
   <version>0.1.0</version>
-  <name>TEST demo-0.1.0 (0.1,Job Designs)</name>
+  <name>TEST Zoho-0.1.0 (0.1,Job Designs)</name>
   <properties>
     <talend.job.type>Standard</talend.job.type>
     <talend.job.date>${maven.build.timestamp}</talend.job.date>
@@ -38,8 +38,8 @@
     <current.test.resources.dir>${basedir}/src/test/resources</current.test.resources.dir>
     <project.distribution-management.repository.url>${project.distributionManagement.repository.url}</project.distribution-management.repository.url>
     <current.bundle.resources.dir>${basedir}/src/main/bundle-resources</current.bundle.resources.dir>
-    <talend.job.name>demo</talend.job.name>
-    <talend.job.finalName>demo_0_1</talend.job.finalName>
+    <talend.job.name>Zoho</talend.job.name>
+    <talend.job.finalName>zoho_0_1</talend.job.finalName>
   </properties>
   <dependencies>
     <dependency>
@@ -68,6 +68,17 @@
       <groupId>org.jboss.marshalling</groupId>
       <artifactId>jboss-marshalling</artifactId>
       <version>2.0.12.Final</version>
+      <exclusions>
+        <exclusion>
+          <artifactId>*</artifactId>
+          <groupId>*</groupId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>org.talend.libraries</groupId>
+      <artifactId>jxl</artifactId>
+      <version>6.0.0</version>
       <exclusions>
         <exclusion>
           <artifactId>*</artifactId>
